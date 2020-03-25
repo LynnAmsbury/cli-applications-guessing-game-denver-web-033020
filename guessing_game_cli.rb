@@ -12,7 +12,7 @@ def run_guessing_game
     if user_input == "exit"
       puts "Goodbye!"
     #If the user's input matches the random number: You guessed the correct number!
-    else if user_input == random_number #NEEDS TO BE A STRING!
+    elsif user_input == random_number #NEEDS TO BE A STRING!
       puts "You guessed the correct number!"
     #If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
     else
