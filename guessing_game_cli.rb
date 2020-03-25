@@ -15,7 +15,7 @@ def run_guessing_game
   elsif user_input == random_number.to_s #NEEDS TO BE A STRING!
       puts "You guessed the correct number!"
     #If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
-  else user_input != random_number.to_s
+  else
       puts `Sorry! The computer guessed #{random_number}`
     end
 end
