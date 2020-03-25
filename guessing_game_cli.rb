@@ -14,7 +14,6 @@ def run_guessing_game
     #If the user's input is equal to "exit": Goodbye!
     else user_input == "exit"
       puts puts "Goodbye!"
-
     #If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
     else
 
