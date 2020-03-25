@@ -5,10 +5,27 @@ def run_guessing_game
  #Prompts the user to guess their own number between 1 and 6
  puts "Guess a number between 1 and 6"
  #Capture user input from the command line
- gets.chomp #Will be captured as a string with no new line
+ user_input = gets.chomp #Will be captured as a string with no new line
  #Compare that input to the random number that has been generated
  #Print out one of three statements:
     #If the user's input matches the random number: You guessed the correct number!
+    if user_input == random_number
     #If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
+
+  else
     #If the user's input is equal to "exit": Goodbye!
+  else
+end
+
+def run_guessing_game
+  random = rand(6) + 1 
+  puts "Guess a number between 1 and 6"
+  user_input = gets.chomp
+  if user_input == random.to_s
+    puts "You guessed the correct number!"
+  elsif user_input == "exit"
+    puts "Goodbye!"
+  else
+    puts "Sorry! The computer guessed #{random}."
+  end
 end
