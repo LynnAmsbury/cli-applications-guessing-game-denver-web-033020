@@ -8,12 +8,12 @@ def run_guessing_game
  user_input = gets.chomp #Will be captured as a string with no new line
  #Compare that input to the random number that has been generated
  #Print out one of three statements:
-    #If the user's input matches the random number: You guessed the correct number!
-    if user_input == random_number #NEEDS TO BE A STRING!
-      puts "You guessed the correct number!"
     #If the user's input is equal to "exit": Goodbye!
-    else user_input == "exit"
-      puts puts "Goodbye!"
+    if user_input == "exit"
+      puts "Goodbye!"
+    #If the user's input matches the random number: You guessed the correct number!
+    else user_input == random_number #NEEDS TO BE A STRING!
+      puts "You guessed the correct number!"
     #If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
     else
 
